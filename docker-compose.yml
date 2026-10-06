@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  web:
+    image: web-tugas-101012300189:1.0
+    ports:
+      - "8080:8000"
+    environment:
+      - STUDENT_NIM=101012300189
+  
+  cache:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
